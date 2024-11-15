@@ -1,0 +1,7 @@
+@media screen and (min-width: 36em) {
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+}
