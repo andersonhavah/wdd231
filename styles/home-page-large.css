@@ -3,5 +3,13 @@
     main {
         grid-template-columns: 2fr 1fr;
     }
+
+    .card-certificate {
+        grid-column: 1 / 3;
+    }
+
+    .course-card {
+        width: calc(33% - 20px);
+    }
     
 }

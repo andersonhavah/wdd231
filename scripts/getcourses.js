@@ -78,14 +78,84 @@ const courses = [
     }
 ]
 
-const coursesElement = document.querySelector('#courses');
+// const coursesElement = document.querySelector('#courses');
 
-courses.forEach(course => {
-    const div = document.createElement('div');
-    div.classList.add('course');
-    const h3 = document.createElement('h3');
-    h3.textContent = `${course.subject} ${course.number}`;
-    div.appendChild(h3);
-    coursesElement.appendChild(div);
+// courses.forEach(course => {
+//     const div = document.createElement('div');
+//     div.classList.add('course');
+//     const h3 = document.createElement('h3');
+//     h3.textContent = `${course.subject} ${course.number}`;
+//     div.appendChild(h3);
+//     coursesElement.appendChild(div);
+// });
+
+const coursesContainer = document.getElementById('courses');
+const totalCreditsElement = document.getElementById('total-credits');
+
+// Function to display courses based on filter
+function displayCourses(filteredCourses) {
+    coursesContainer.innerHTML = '';
+    let totalCredits = 0;
+    
+    // Iterate through the filtered courses (function argument)
+    filteredCourses.forEach(course => {
+        const courseCard = document.createElement('div');
+        courseCard.classList.add('course-card');
+        
+        // Check whether or not the course is completed and create the right class attribute
+        if (course.completed) {
+            courseCard.classList.add('completed');
+        } else {
+            courseCard.classList.add('not-completed');
+        }
+
+        // Add the course information to be displayed
+        courseCard.innerHTML = `
+            <h3>${course.title} (${course.subject} ${course.number})</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+            <button class="details-btn" onclick="showCourseDetails(${course.number})">Details</button>
+        `;
+        
+        coursesContainer.appendChild(courseCard);
+        totalCredits += course.credits;
+    });
+
+    totalCreditsElement.textContent = totalCredits;
+}
+
+// Function to show course details in dialog
+function showCourseDetails(courseNumber) {
+    const course = courses.find(c => c.number === courseNumber);
+    const dialog = document.getElementById('courses-details');
+    dialog.innerHTML = `
+        <h3>${course.title} (${course.subject} ${course.number})</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+        <button onclick="closeDialog()">Close</button>
+    `;
+    dialog.showModal();
+}
+
+// Function to close the dialog
+function closeDialog() {
+    document.getElementById('courses-details').close();
+}
+
+// Event listeners for filter buttons
+document.getElementById('all').addEventListener('click', () => {
+    displayCourses(courses);
 });
+
+document.getElementById('cse').addEventListener('click', () => {
+    displayCourses(courses.filter(course => course.subject === 'CSE'));
+});
+
+document.getElementById('wdd').addEventListener('click', () => {
+    displayCourses(courses.filter(course => course.subject === 'WDD'));
+});
+
+// Initially display all courses
+displayCourses(courses);
 
