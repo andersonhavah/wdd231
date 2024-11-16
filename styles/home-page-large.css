@@ -9,7 +9,29 @@
     }
 
     .course-card {
-        width: calc(33% - 20px);
+        max-width: 270px;
     }
-    
+
+    #menu {
+        display: none;
+    }
+
+    .navigation a {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .navigation div {
+        flex-direction: row;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    #courses-details {
+        max-width: 60vw;
+    }
+
 }
