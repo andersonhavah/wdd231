@@ -86,6 +86,10 @@ nav div .active {
     color: #ffff00;
 }
 
+nav div .active:hover {
+    color: var(--navigation-background);
+}
+
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
