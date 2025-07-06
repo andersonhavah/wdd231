@@ -1,0 +1,49 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1 / 3;
+    }
+
+    .card-certificate {
+        grid-column: 1 / 3;
+    }
+
+    .course-card {
+        max-width: 270px;
+    }
+
+    #courses-details {
+        max-width: 60vw;
+    }
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+}
