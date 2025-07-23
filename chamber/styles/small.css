@@ -1,0 +1,277 @@
+/* --------- COLOR SCHEME ---------------
+Dark blue: #1d4d72
+Dark blue 2: #1A3465
+Light green: #a8e9b7
+*/
+
+:root {
+    --dark-blue: #1d4d72;
+    --dark-blue-2: #1A3465;
+    --light-green: #a8e9b7;
+    --light-blue: #add8e6;
+    --light-gray: #ddd;
+    --white: #ffffff;
+}
+
+/* ********************** SITE WIDE ********************* */
+* {
+    box-sizing: border-box;
+    font-family: "Crimson Pro", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ********************** HEADER ********************* */
+header {
+    display: grid;
+    grid-template-columns: 80px auto 44px;
+    padding: 7px 0 7px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #eee;
+}
+
+header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 5px;
+    grid-column: 1 / 2;
+}
+
+header span {
+    font-size: 1.7rem;
+    color: var(--dark-blue);
+    grid-column: 2 / 3;
+    margin: auto 0;
+}
+
+/* *********************** Dark mode button ********************* */
+#darkBtn {
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+    width: 1.6rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    grid-column: 3 / 4;
+    border: 1px solid #000;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #ffffff;
+    border-color: #eee;
+}
+
+.dark-mode .card {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #444;
+}
+
+.dark-mode .grid,
+.dark-mode .list {
+    background-color: #000000;
+    color: var(--dark-blue);
+    border-color: #444;
+}
+
+.dark-mode .grid div,
+.dark-mode .list div {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #444;
+}
+
+.dark-mode .grid div a,
+.dark-mode .list div a {
+    color: #f27d80;
+}
+
+.dark-mode .grid div img {
+    background-color: #ffffff;
+}
+
+/* ***************** HAMBURGER MENU ***************** */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* ********************** NAVIGATION ********************* */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #1A3465;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #a8e9b7;
+}
+
+.navigation a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+/* ******************** MAIN *********************** */
+/* main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+} */
+
+main h1 {
+    margin-left: 1rem;
+    text-align: left;
+}
+
+/************************** DIRECTORY HERE **************************/
+div.theButtons {
+    width: 100%;
+    text-align: center;
+}
+
+div.theButtons button.active {
+    background-color: #f27d80;
+    color: #000000;
+}
+
+div.theButtons button {
+    margin: 0 1rem;
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #666;
+    color: var(--dark-blue);
+}
+
+div#members {
+    margin: 0 2vw;
+}
+
+/*GRID layout here*/
+div.grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+div.grid div {
+    text-align: center;
+    margin: 1rem 0;
+    border: solid 1px #aaa;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    color: var(--dark-blue);
+}
+
+div.grid img {
+    width: 130px;
+    height: 60px;
+}
+
+div.grid h2 {
+    margin: .2rem 0;
+}
+
+div.grid p {
+    margin: .2rem 0;
+}
+
+/*LIST layout here*/
+div.list div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    margin: 1rem;
+    padding: 0.3rem;
+    border: solid 1px #aaa;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 1rem;
+    color: var(--dark-blue);
+}
+
+div.list img:first-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* ********************** FOOTER ********************* */
+
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    border-top: solid 1px #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer p {
+    margin: .5rem 0;
+    color: #1d4d72;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+    border: #bbb solid 1px;
+    border-radius: 44px;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
