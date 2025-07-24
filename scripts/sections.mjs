@@ -9,5 +9,3 @@ export function setSectionSelection() {
     sectionSelect.appendChild(option);
   });
 }
-
-// export { setSectionSelection };
