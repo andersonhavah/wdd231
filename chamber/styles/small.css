@@ -50,7 +50,7 @@ header span {
 /* *********************** Dark mode button ********************* */
 #darkBtn {
     position: absolute;
-    top: 1.5rem;
+    top: 1.2rem;
     right: 0.5rem;
     width: 1.6rem;
     cursor: pointer;
@@ -79,18 +79,33 @@ header span {
 }
 
 .dark-mode .grid div,
-.dark-mode .list div {
+.dark-mode .list div,
+.dark-mode #spotlight div,
+.dark-mode .events-weather section {
     background-color: #000000;
     color: #ffffff;
     border-color: #444;
 }
 
+.dark-mode #spotlight div p,
+.dark-mode .events-weather p{
+    color: #ffffff;
+}
+
+.dark-mode #spotlight div h2,
+.dark-mode .events-weather section h2 {
+    color: #ffffff;
+    background-color: #181414;
+}
+
 .dark-mode .grid div a,
-.dark-mode .list div a {
+.dark-mode .list div a,
+.dark-mode #spotlight div a {
     color: #f27d80;
 }
 
-.dark-mode .grid div img {
+.dark-mode .grid div img,
+.dark-mode #spotlight div img {
     background-color: #ffffff;
 }
 
@@ -98,7 +113,7 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--dark-blue);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -145,11 +160,11 @@ header span {
 }
 
 /* ******************** MAIN *********************** */
-/* main {
+main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.5rem;
-} */
+}
 
 main h1 {
     margin-left: 1rem;
@@ -198,7 +213,7 @@ div.grid div {
     color: var(--dark-blue);
 }
 
-div.grid img {
+div.grid img, #spotlight img {
     width: 130px;
     height: 60px;
 }
@@ -232,6 +247,96 @@ div.list img:first-child {
 h1 {
     text-align: center;
     margin: 1rem 0;
+}
+
+/* ********************** HOME MAIN ********************* */
+/* ********************** EVENTS AND WEATHER ********************* */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero a {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background: var(--dark-blue);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: .8rem;
+    box-shadow: 0 0 3rem #fff;
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+
+.hero a:hover {
+    background-color: var(--light-gray);
+    color: var(--dark-blue-2);
+}
+
+div.events-weather h2 {
+    text-align: center;
+    color: var(--dark-blue-2);
+    background-color: var(--light-green);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+section.events p, section.weather-forecast p {
+    margin: 1rem;
+    text-align: center;
+}
+
+section.current-weather p {
+    margin: 0.2rem;
+    text-align: center;
+}
+
+section.events, section.current-weather, section.weather-forecast {
+    background-color: #eee;
+    color: var(--dark-blue);
+    margin: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+section.current-weather img {
+    display: block;
+    margin: 0 auto;
+}
+
+/************************** HOME PAGE SPOTLIGHTS HERE **************************/
+#spotlight div {
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+#spotlight h2 {
+    background-color: var(--light-green);
+    margin: 0;
+    padding: 0.5rem;
+    color: var(--dark-blue-2);
+}
+
+#spotlight p {
+    margin: 0;
+    padding: .5rem;
+    color: var(--dark-blue);
+}
+
+#spotlight img {
+    width: 100px;
+    height: 50px;
 }
 
 /* ********************** FOOTER ********************* */

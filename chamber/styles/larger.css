@@ -61,6 +61,7 @@
         border: none;
     }
 
+    /* ********************** FOOTER ********************* */
     footer {
         flex-direction: row;
         gap: 3rem;
@@ -68,4 +69,17 @@
         font-size: 1.2rem;
     }
 
+    /* ********************** EVENTS AND WEATHER ********************* */
+    div.events-weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* ********************** SPOTLIGHT ********************* */
+    #spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
