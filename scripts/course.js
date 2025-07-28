@@ -118,8 +118,10 @@ function showCourseDetails(courseNumber) {
     const course = courses.find(c => c.number === courseNumber);
     const dialog = document.getElementById('courses-details');
     dialog.innerHTML = `
-        <h3>${course.title} (${course.subject} ${course.number})</h3>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
         <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
         <p><strong>Description:</strong> ${course.description}</p>
         <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
         <button onclick="closeDialog()">Close</button>
