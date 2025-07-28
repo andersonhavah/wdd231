@@ -74,6 +74,7 @@ header span {
     color: #1A3465;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+    font-size: 1.2rem;
 }
 
 .navigation li.current {
@@ -231,7 +232,7 @@ button.details-btn:hover {
     margin-bottom: 5px;
 }
 
-#courses-details p:nth-of-type(2) {
+#courses-details p:nth-of-type(3) {
     line-height: 2rem;
 }
 
@@ -265,6 +266,7 @@ footer {
 footer p {
     margin: .5rem 0;
     color: #1d4d72;
+    font-size: 1.2rem;
 }
 
 .social {
