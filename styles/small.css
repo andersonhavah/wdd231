@@ -75,6 +75,7 @@ header span {
     text-decoration: none;
     border-bottom: solid 1px #ddd;
     font-size: 1.2rem;
+    transition: all 0.5s ease-out;
 }
 
 .navigation li.current {
