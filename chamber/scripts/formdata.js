@@ -8,6 +8,7 @@ const myInfo = new URLSearchParams(window.location.search);
 // console.log(myInfo.get('phone'));
 // console.log(myInfo.get('organization'));
 // console.log(myInfo.get('description'));
+// console.log(myInfo.get('currentdate'));
 
 //build the message
 document.querySelector('#results').innerHTML = `
@@ -16,11 +17,5 @@ document.querySelector('#results').innerHTML = `
     <p>Organization: ${myInfo.get('organization')} </p>
     <p>Phone: ${myInfo.get('phone')} </p>
     <p>Email: ${myInfo.get('email')}</p>
-    <p>Business Description: ${myInfo.get('description')}</p>`;
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const timestampField = document.getElementById('today');
-    const now = new Date();
-    timestampField.value = now.toISOString();
-});
+    <p>Business Description: ${myInfo.get('description')}</p>
+    <p>Submitted at: ${myInfo.get('currentdate')}</p>`;
