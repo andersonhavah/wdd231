@@ -88,7 +88,7 @@ header span {
 }
 
 .dark-mode #spotlight div p,
-.dark-mode .events-weather p{
+.dark-mode .events-weather p {
     color: #ffffff;
 }
 
@@ -172,7 +172,7 @@ main h1 {
     text-align: left;
 }
 
-/************************** DIRECTORY HERE **************************/
+/************************** DIRECTORY PAGE **************************/
 div.theButtons {
     width: 100%;
     text-align: center;
@@ -214,7 +214,8 @@ div.grid div {
     color: var(--dark-blue);
 }
 
-div.grid img, #spotlight img {
+div.grid img,
+#spotlight img {
     width: 130px;
     height: 60px;
 }
@@ -250,7 +251,7 @@ h1 {
     margin: 1rem 0;
 }
 
-/* ********************** HOME MAIN ********************* */
+/* ********************** HOME PAGE ********************* */
 /* ********************** EVENTS AND WEATHER ********************* */
 .hero img {
     width: 100%;
@@ -289,7 +290,8 @@ div.events-weather h2 {
     border-radius: 10px;
 }
 
-section.events p, section.weather-forecast p {
+section.events p,
+section.weather-forecast p {
     margin: 1rem;
     text-align: center;
 }
@@ -299,7 +301,9 @@ section.current-weather p {
     text-align: center;
 }
 
-section.events, section.current-weather, section.weather-forecast {
+section.events,
+section.current-weather,
+section.weather-forecast {
     background-color: #eee;
     color: var(--dark-blue);
     margin: 0.5rem;
@@ -312,7 +316,7 @@ section.current-weather img {
     margin: 0 auto;
 }
 
-/************************** HOME PAGE SPOTLIGHTS HERE **************************/
+/************************** HOME PAGE SPOTLIGHTS **************************/
 #spotlight div {
     background-color: #eee;
     text-align: center;
@@ -340,6 +344,222 @@ section.current-weather img {
     height: 50px;
 }
 
+/************************** JOIN PAGE **************************/
+.membership-container {
+    /* padding: 1rem; */
+    background-color: #eee;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin: 1rem 0.5rem;
+}
+
+form.designOne {
+    margin: 1rem 2%;
+}
+
+/* section.join-form {
+    background-color: #eee;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+} */
+
+.membership-container h2,
+.membership-container h3 {
+    color: var(--dark-blue-2);
+}
+
+.designOne label {
+    display: block;
+    font-size: 1rem;
+    color: var(--dark-blue-2);
+    padding-top: .2rem;
+}
+
+.designOne h3 {
+    font-size: 1rem;
+    color: var(--dark-blue-2);
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.designOne input[type=radio] {
+    font-size: 44px;
+}
+
+.designOne input[type=text],
+.designOne input[type=tel],
+.designOne input[type=date],
+.designOne input[type=email],
+.designOne textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+}
+
+.designOne input:required {
+    border-left-color: #d70000;
+}
+
+.designOne input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+.designOne input:required:valid {
+    border-left-color: green;
+}
+
+.designOne input[type=submit] {
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    animation: color_change 2s infinite alternate linear;
+    cursor: pointer;
+    outline: none;
+}
+
+@keyframes color_change {
+    0% {
+        border-radius: 1px 20px;
+        background-color: var(--dark-blue);
+    }
+
+    100% {
+        border-radius: 20px 1px;
+        background-color: var(--dark-blue-2);
+    }
+}
+
+.designOne input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+#results {
+    background-color: var(--light-green);
+    color: var(--dark-blue-2);
+    padding: 1rem;
+    border: 1px solid var(--dark-blue-2);
+    border-radius: 6px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.thankyou-main {
+    margin: 0.5rem;
+}
+
+.thankyou-main p {
+    color: var(--dark-blue-2);
+    font-size: 1.2rem;
+}
+
+.thankyou-main>p {
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* JOIN PAGE MODALs */
+.membership-level aside {
+    border: solid 1px #444;
+    border-radius: 5px 20px;
+    padding: 10px;
+    background-color: #bed9d2;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.membership-level aside button {
+    background-color: var(--dark-blue-2);
+    color: #ffffff;
+    padding: 0.3rem;
+    border-radius: 0.8rem 0;
+    border: none;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.membership-level h2 {
+    color: var(--dark-blue-2);
+    margin: 1rem 1rem 1rem 0;
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0%;
+        margin-top: 50px;
+        background-color: #aebb1a;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-top: 0px;
+        background-color: #bed9d2;
+    }
+}
+
+#mlModal {
+    position: fixed;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    padding: .5rem;
+    background-color: #eee;
+    box-shadow: 0 0 15px #777;
+    width: 90%;
+    margin: auto;
+    color: var(--dark-blue-2);
+    line-height: 1.5;
+}
+
+#mlModal div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    border-bottom: dashed 1px #aaa;
+}
+
+#mlModal h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+#mlModal span {
+    font-size: 1rem;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#mlModal button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ccc;
+    font-size: 1.5rem;
+    color: var(--dark-blue-2);
+    cursor: pointer;
+}
+
 /* ********************** FOOTER ********************* */
 
 footer {
@@ -354,7 +574,7 @@ footer {
 
 footer p {
     margin: .5rem 0;
-    color: #1d4d72;
+    color: var(--dark-blue);
 }
 
 .social {
