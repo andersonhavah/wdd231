@@ -12,7 +12,6 @@ ml1Btn.addEventListener('click', () => {
     mldetails.innerHTML = `<p>Benefits include:</p>
     <ul>
     <li>You'll get a nice plaque with the mayor's stamp on it</li>
-    <li>You get to ride on a float Saint Patty's Day</li>
     </ul>
     <p>COST: Free</p>
     `
@@ -25,9 +24,9 @@ ml2Btn.addEventListener('click', () => {
     mltitle.innerHTML = "Bronze Membership"
     mldetails.innerHTML = `<p>Benefits include:</p>
     <ul>
-    <li>Discount tickets to all Bowl Games</li>
+    <li>Discount tickets to all Soccer Games</li>
     <li>You'll get a nice plaque with the mayor's stamp on it</li>
-    <li>You get to ride on a float Saint Patty's Day</li>
+    <li>You get a 20% discount on the Annual Business Event</li>
     </ul>
     <p>COST: $10 annual</p>
     `
@@ -41,9 +40,9 @@ ml3Btn.addEventListener('click', () => {
     mldetails.innerHTML = `<p>Benefits include:</p>
     <ul>
     <li>Free soda at the snack bar</li>
-    <li>Discount tickets to all Bowl Games</li>
+    <li>Discount tickets to all Soccer Games</li>
     <li>You'll get a nice plaque with the mayor's stamp on it</li>
-    <li>You get to ride on a float Saint Patty's Day</li>
+    <li>You get a 20% discount on the Annual Business Event</li>
     </ul>
     <p>COST: $20 annual</p>
     `
@@ -59,9 +58,9 @@ ml4Btn.addEventListener('click', () => {
     <li>Home Page Spotlight</li>
     <li>Invitaion to special events</li>
     <li>Free soda at the snack bar</li>
-    <li>Discount tickets to all Bowl Games</li>
+    <li>Discount tickets to all Soccer Games</li>
     <li>You'll get a nice plaque with the mayor's stamp on it</li>
-    <li>You get to ride on a float Saint Patty's Day</li>
+    <li>You get a 20% discount on the Annual Business Event</li>
     </ul>
     <p>COST: $30 annual</p>
     `
