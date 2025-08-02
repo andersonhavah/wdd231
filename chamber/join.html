@@ -78,17 +78,19 @@
                             title="A Phone Number with dashes" placeholder="987-555-1234"></label>
                     <label>Organization <input type="text" name="organization" required title="organization"
                             autocomplete="organization"></label>
-                    <label>Business Decription<textarea name="description"></textarea></label>
+                    <label>Business Decription<textarea name="description" rows="4" cols="20"></textarea></label>
 
 
-                    <h3>Membership Level</h3>
-                    <label><input type="radio" name="level" value="Non Profit Membership"> Non Profit Membership</label>
-                    <label><input type="radio" name="level" value="Bronze Membership" checked> Bronze Membership</label>
-                    <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
-                    <label><input type="radio" name="level" value="Sealing"> Gold Membership</label>
-
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <label><input type="radio" name="level" value="Non Profit Membership"> Non Profit Membership</label>
+                        <label><input type="radio" name="level" value="Bronze Membership" checked> Bronze Membership</label>
+                        <label><input type="radio" name="level" value="Silver Membership"> Silver Membership</label>
+                        <label><input type="radio" name="level" value="Gold Membership"> Gold Membership</label>
+                    </fieldset>
+                    
                     <input type="submit" value="Apply for Membership">
-                    <input type="hidden" name="hiddendate" id="today">
+                    <input type="hidden" name="currentdate" id="today">
                 </form>
             </section>
 
