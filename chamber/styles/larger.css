@@ -21,11 +21,6 @@
         margin: auto 0;
     }
 
-    /* div.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    } */
-
     #darkBtn {
         position: absolute;
         top: 4rem;
@@ -81,5 +76,27 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+    }
+
+    /* ********************** JOIN PAGE ********************* */
+    .membership-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership-level h2 {
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    #mlModal {
+        width: 50%;
+    }
+
+    .thankyou-main {
+        /* max-width: 1000px; */
+        margin: 0 auto 1rem;
+        border-radius: 6px;
+        line-height: 1.5;
+        font-size: 1.2rem;
     }
 }
