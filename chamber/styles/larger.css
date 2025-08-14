@@ -99,4 +99,18 @@
         line-height: 1.5;
         font-size: 1.2rem;
     }
+
+}
+
+@media only screen and (min-width: 64.06rem) {
+
+    /************************** DISCOVER PAGE HERE **************************/
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-main {
+        max-width: 1200px;
+    }
 }

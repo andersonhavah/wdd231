@@ -568,6 +568,70 @@ form.designOne {
     cursor: pointer;
 }
 
+/************************** DISCOVER PAGE **************************/
+.join-main h1{
+    color: var(--dark-blue-2);
+    margin: 0.3rem;
+}
+
+.join-main .first-div {
+    color: var(--dark-blue-2);
+    margin: 0.3rem;
+}
+
+#allplaces div {
+    margin: 1rem 8px;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "cost"
+        "location"
+        "button"
+}
+
+#allplaces div h2 {
+    margin: 1rem 0px;
+    grid-area: name;
+    color: var(--dark-blue-2);
+    text-align: center;
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#allplaces div p {
+    margin: 0.5rem 0px;
+    grid-area: description;
+    color: var(--dark-blue-2);
+}
+
+#allplaces div address {
+    margin: 0.5rem 0px;
+    grid-area: location;
+    color: var(--dark-blue-2);
+}
+
+#allplaces div button {
+    margin: 1rem 0px;
+    background-color: var(--dark-blue-2);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    padding: 1rem;
+    grid-area: button;
+}
+
 /* ********************** FOOTER ********************* */
 
 footer {
