@@ -41,11 +41,3 @@ function displayItems(places) {
 
 // START DISPLAYING ALL ITEMS IN THE JSON FILE
 displayItems(places)
-
-
-// POPULATE THE DIALOG WITH INFORMATION WHEN IMAGE IS CLICKED
-function showStuff(x) {
-  mytitle.innerHTML = x.name
-  myinfo.innerHTML = `Dedicated ${x.dedicated} by ${x.person} as temple number ${x.number}`
-  mydialog.showModal();
-} // end of function
