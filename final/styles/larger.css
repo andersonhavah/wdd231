@@ -1,0 +1,55 @@
+/* --- Responsive Design (Media Queries) --- */
+@media (min-width: 768px) {
+    .steps-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        position: relative;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        /* Hide nav links by default */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--card-bg);
+        flex-direction: column;
+        text-align: center;
+        box-shadow: var(--shadow);
+    }
+
+    #nav-links.open {
+        display: flex;
+        /* Show nav links when .open class is applied */
+    }
+
+    #nav-links li {
+        padding: 1rem 0;
+        width: 100%;
+        border-top: 1px solid #eee;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-form input,
+    .search-form button {
+        width: 90%;
+        max-width: 400px;
+    }
+}
