@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Plate | Easy Recipes from Your Pantry</title>
+
+    <meta name="description"
+        content="Simple Plate helps you find easy-to-make recipes using a single ingredient you already have. Stop wondering what to cook and start creating delicious meals in minutes.">
+    <meta name="author" content="Anderson Havah">
+
+    <meta property="og:title" content="Simple Plate | Easy Recipes from Your Pantry">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/finalproject/">
+    <meta property="og:image"
+        content="https://your-github-username.github.io/wdd231/finalproject/images/social-share-card.png">
+    <meta property="og:description"
+        content="Find easy recipes using ingredients you already have. Perfect for busy weeknights!">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <script src="scripts/home.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.webp" alt="Simple Plate Logo">Simple Plate</a>
+        <nav>
+            <button id="hamburger-menu" aria-label="Open Navigation Menu">
+                <span>&equiv;</span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="submit.html">Submit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>What ingredient do you have?</h1>
+            <p>Discover simple, delicious recipes you can make right now.</p>
+            <form action="recipes.html" method="get" class="search-form">
+                <input type="text" name="ingredient" placeholder="e.g., chicken, eggs, tomatoes" required>
+                <button type="submit">Find Recipes</button>
+            </form>
+        </section>
+
+        <section class="info-section">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <h3>1. Enter an Ingredient</h3>
+                    <p>Type any single ingredient you have on hand into the search bar.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Browse Recipes</h3>
+                    <p>We'll show you a variety of simple recipes featuring your ingredient.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Get Cooking</h3>
+                    <p>Pick a recipe and follow the easy instructions. Enjoy your meal!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="address">
+            <p>Lome Chamber of Commerce</p>
+            <p>15 Boulevard Malfa</p>
+            <p>Lome, Togo</p>
+            <p>info@lomecc.org</p>
+            <p>(228) 22-55-23-00</p>
+        </div>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="x (old twitter)" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        </div>
+        <div class="project">
+            <p>WDD231 Class Project</p>
+            <p>Anderson Havah</p>
+            <a href="https://your-video-link.com" target="_blank">Video Demo</a>
+            <p>&copy; <span id="currentYear"></span> Lome Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
