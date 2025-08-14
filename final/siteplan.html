@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Plate | Site Plan</title>
+    <meta name="description" content="The site plan for the Simple Plate recipe finder website project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Site Plan: Simple Plate</h1>
+    </header>
+    <main>
+        <section id="name">
+            <h2>Site Name</h2>
+            <p>
+                <strong>Simple Plate.</strong> This name was chosen because it directly communicates the website's core
+                purpose: providing simple, uncomplicated recipes. It's memorable, easy to say, and evokes a sense of
+                clean, straightforward cooking.
+            </p>
+        </section>
+
+        <section id="purpose">
+            <h2>Site Purpose</h2>
+            <p>
+                The purpose of Simple Plate is to be a minimalist, no-frills recipe finder for users who want to cook
+                with what they already have. The site will help busy professionals, students, and beginner cooks quickly
+                find simple recipes based on a single core ingredient, removing the hassle of complex meal planning and
+                grocery shopping.
+            </p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>"I have chicken breasts in the fridge that I need to use tonight. What's a quick and easy recipe I
+                    can make with minimal extra ingredients?"</li>
+                <li>"I'm new to cooking and find most recipe websites overwhelming. Where can I find a simple dish that
+                    won't take me hours to prepare?"</li>
+            </ul>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <ul>
+                <li><code>#F8F9FA (Cultured)</code>: A very light, off-white for the main page background. It's softer
+                    on the eyes than pure white and provides a clean, airy feel.</li>
+                <li><code>#1e5a21 (Dark Green)</code>: A fresh, inviting green to be used for headings, links, buttons,
+                    and other interactive elements. This color suggests freshness, health, and simplicity.</li>
+                <li><code>#333333 (Onyx)</code>: A dark gray for all body text. It provides strong contrast against the
+                    light background for excellent readability without the harshness of pure black.</li>
+                <li><code>#FFFFFF (White)</code>: Used for the background of cards and modal dialogs to make them stand
+                    out against the slightly off-white page background.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <ul>
+                <li>
+                    <strong>Montserrat:</strong> This clean, modern sans-serif font will be used for all headings
+                    (<code>h1, h2</code>). Its geometric shapes give a professional and organized look.
+                </li>
+                <li>
+                    <strong>Roboto:</strong> This highly readable and friendly sans-serif font will be used for all body
+                    text, including paragraphs and lists. It's a workhorse font known for its clarity on digital
+                    screens.
+                </li>
+            </ul>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>The wireframes below outline the basic structure of the home page for both mobile and desktop views,
+                focusing on the core user journey of searching for a recipe.</p>
+            <div class="wireframe-container">
+                <figure>
+                    <figcaption>Mobile View</figcaption>
+                    <img src="images/home-mobile-wireframe.webp" alt="Home Page Mobile view Wireframe">
+                </figure>
+                <figure>
+                    <figcaption>Desktop View</figcaption>
+                    <img src="images/home-large-wireframe.webp" alt="Home Page Large view Wireframe">
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Anderson Havah | WDD 231 Project</p>
+    </footer>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
