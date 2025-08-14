@@ -110,11 +110,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .join-main {
+    .discover-main {
         max-width: 1200px;
     }
 
-        #allplaces div img {
-            margin: auto;
-        }
+    #allplaces div img {
+        margin: auto;
+    }
 }

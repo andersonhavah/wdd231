@@ -354,6 +354,11 @@ section.current-weather img {
     margin: 1rem 0.5rem;
 }
 
+.join-main h1 {
+    color: #000000;
+    margin: 0.3rem;
+}
+
 form.designOne {
     margin: 1rem 2%;
 }
@@ -569,14 +574,14 @@ form.designOne {
 }
 
 /************************** DISCOVER PAGE **************************/
-.join-main h1{
-    color: var(--dark-blue-2);
+.discover-main h1 {
+    color: #000000;
     margin: 0.3rem;
 }
 
-.join-main .first-div {
+.discover-main .first-div {
     color: var(--dark-blue-2);
-    margin: 0.3rem;
+    margin: 0.5rem;
 }
 
 #allplaces div {
