@@ -113,4 +113,8 @@
     .join-main {
         max-width: 1200px;
     }
+
+        #allplaces div img {
+            margin: auto;
+        }
 }
